@@ -98,7 +98,7 @@ Wechat: bitquant51
 
 ```
 配置文件的参数说明。
-
+'''如果是跑现货平台注意开启bnb抵扣手续费
 1. platform: 可选的值有两个,分别是binance_future和binance_spot，
    如果你想交易现货，就填写binance_spot, 合约就写binance_future
 2. api_key: 币安交易所的api key
