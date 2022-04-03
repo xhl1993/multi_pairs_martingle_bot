@@ -228,7 +228,18 @@ class BinanceFutureTrader(object):
                     self.positions.update_profit_max_price(s, bid_price)
                     # calculate the profit here.
                     profit_pct = bid_price / avg_price - 1
-                    pull_back_pct = self.positions.positions.get(s, {}).get('profit_max_price', 0) / bid_price - 1
+                    pull_back_pct = self.positions.positions.get(s, {}).get('
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            it_max_price', 0) / bid_price - 1
 
                     dump_pct = self.positions.positions.get(s, {}).get('last_entry_price', 0) / bid_price - 1
                     current_increase_pos_count = self.positions.positions.get(s, {}).get('current_increase_pos_count',
@@ -262,7 +273,7 @@ class BinanceFutureTrader(object):
 
                     # if the market price continue drop down you can increase your positions.
 
-                    elif dump_pct >= config.increase_pos_when_drop_down and len(self.buy_orders_dict.get(s,
+                    elif dump_pct >= config.exit_profit_pct and len(self.buy_orders_dict.get(s,
                                                                                                          [])) <= 0 and current_increase_pos_count <= config.max_increase_pos_count:
 
                         # cancel the sell orders, when we want to place buy orders, we need to cancel the sell orders.
