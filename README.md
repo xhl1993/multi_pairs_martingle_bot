@@ -30,7 +30,7 @@
 
 
 ```
-
+#如果是现货交易一定要开启bnb抵扣，否则无法正常运行
 1. platform: binance_future for Binance Future Exchange, binance_spot
    for Binance Spot Exchange
 2. api_key: api key from Binance exchange api key
