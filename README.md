@@ -97,7 +97,7 @@ Wechat: bitquant51
 }
 
 ```
-配置文件的参数说明。
+配置文件的参数说明。#如果为现货交易在现货里面要持有一定bnb并开启bnb抵扣。
 
 1. platform: 可选的值有两个,分别是binance_future和binance_spot，
    如果你想交易现货，就填写binance_spot, 合约就写binance_future
